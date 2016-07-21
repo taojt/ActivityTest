@@ -3,5 +3,6 @@
     <string name="title_activity_first">FirstActivity</string>
     <string name="send_button">Send</string>
     <string name="title_activity_sencond">SencondActivity</string>
+    <string name="title_activity_basic">BasicActivity</string>
 
 </resources>

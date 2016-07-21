@@ -7,15 +7,23 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class SencondActivity extends AppCompatActivity {
+public class SencondActivity extends BasicActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sencond);
+        Button button = (Button) findViewById(R.id.button_exit);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ActivityCollector.finishAll();
+            }
+        });
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -32,6 +40,7 @@ public class SencondActivity extends AppCompatActivity {
         String message = intent.getStringExtra("extra_data").toString();
 
         Toast.makeText(SencondActivity.this, message, Toast.LENGTH_SHORT).show();
+
 
     }
 

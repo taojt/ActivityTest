@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class FirstActivity extends AppCompatActivity {
+public class FirstActivity extends BasicActivity{
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
