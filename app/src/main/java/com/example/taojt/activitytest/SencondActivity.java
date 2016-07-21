@@ -30,8 +30,8 @@ public class SencondActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         String message = intent.getStringExtra("extra_data").toString();
+
         Toast.makeText(SencondActivity.this, message, Toast.LENGTH_SHORT).show();
-//        Toast.makeText(SencondActivity.this, message, Toast.LENGTH_SHORT).show();
 
     }
 
