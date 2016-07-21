@@ -70,12 +70,14 @@ public class FirstActivity extends BasicActivity{
             @Override
             public void onClick(View view) {
                 Toast.makeText(FirstActivity.this, "You click button!",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(FirstActivity.this,SencondActivity.class);
-                String message = "Hello,第二个Activity!";
-                intent.putExtra("extra_data", message);
+//                Intent intent = new Intent(FirstActivity.this,SencondActivity.class);
+//                String message = "Hello,第二个Activity!";
+//                intent.putExtra("extra_data", message);
                 // Intent 隐式用法
-//                Intent intent = new Intent(Intent.ACTION_VIEW);
-//                intent.setData(Uri.parse("http://baidu.com"));
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("http://baidu.com"));
+                // Intent 调用系统拨号
+//                intent.setData(Uri.parse("tel:10086"));
                 startActivityForResult(intent, 1);
 //                startActivity(intent);
             }
