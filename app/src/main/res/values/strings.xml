@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Activity Test</string>
     <string name="title_activity_first">FirstActivity</string>
-    <string name="send_button">Send</string>
+    <string name="button1">Button 1</string>
     <string name="title_activity_sencond">SencondActivity</string>
     <string name="title_activity_basic">BasicActivity</string>
+    <string name="button2">Button 2</string>
 
 </resources>
