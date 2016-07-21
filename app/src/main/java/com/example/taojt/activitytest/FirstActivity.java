@@ -1,6 +1,7 @@
 package com.example.taojt.activitytest;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -68,10 +69,13 @@ public class FirstActivity extends BasicActivity{
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Toast.makeText(FirstActivity.this, "You click button!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(FirstActivity.this, "You click button!",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(FirstActivity.this,SencondActivity.class);
                 String message = "Hello,第二个Activity!";
                 intent.putExtra("extra_data", message);
+                // Intent 隐式用法
+//                Intent intent = new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse("http://baidu.com"));
                 startActivityForResult(intent, 1);
 //                startActivity(intent);
             }
